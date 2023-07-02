@@ -1,0 +1,40 @@
+register api
+=======================
+url:localhost:8000/api/register/
+method:post
+data:username,email,password
+
+token api
+=======================
+url:localhost:8000/api/token/
+method:post
+data:username,password
+
+
+movie list api
+======================
+url:localhost:8000/api/movie/
+method:get
+authentication:token
+
+
+movie detail api
+======================
+url:localhost:8000/api/movie/id/
+method:get
+authentication:token
+
+
+movie add api
+======================
+url:localhost:8000/api/movie/
+method:post
+data:moviename,genres,year,language,r8untime,posterimg,description
+authentication:token
+
+movie review api
+======================
+url:localhost:8000:/api/movie/id/add_review/
+method:post
+data:comment,rating
+authentication:token
